@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blogapp.urls')),
     path('users/', include('users.urls')),
+    path('api/posts/', include('blogapp.api.urls'), name='post-api'),
     path('login/', auth_view.LoginView.as_view(template_name='users/login.html'), name= 'login'),
     path('logout/', auth_view.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
 

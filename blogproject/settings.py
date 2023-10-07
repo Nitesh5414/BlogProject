@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-btts0%_^q5+1f!rlj87#d^vm2hs5)67_21h6mgud$#c7j2^898'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blogapp.apps.BlogappConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'rest_framework',
 
 ]
 
