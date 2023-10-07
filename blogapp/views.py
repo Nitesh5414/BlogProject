@@ -13,6 +13,7 @@ from django.views.generic import (               # import generic views
         )
 # Create your views here.
 
+
 ############### views for index page ##################
 class IndexPageView(TemplateView):
     template_name = 'blogapp/index.html'

@@ -1,6 +1,7 @@
 from django.urls import path
 from blogapp import views
 
+
 urlpatterns = [
     path('index/', views.IndexPageView.as_view()),
     path('', views.PostListView.as_view(), name='blog-post'),

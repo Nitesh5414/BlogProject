@@ -13,6 +13,7 @@ class UserCreateView(CreateView):
     template_name = 'users/user_register.html'
     success_url   = '/login/'
 
+
 class UserListView(ListView):
     model               = User
     template_name       = 'users/read_user.html'
